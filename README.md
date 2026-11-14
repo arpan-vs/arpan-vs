@@ -76,7 +76,6 @@ A Rust implementation of Angluin's L* algorithm, published on crates.io. It lear
 
 - 🎓 Studying IT security and cryptography at KIT, with security research as the longer-term direction. AI and blockchain are on the list too.
 - 🇩🇪 Learning German, currently at A1.
-- 🤝 Before KIT, I was a core member of the Microsoft Student Technical Club at DA-IICT, where I helped run workshops and hackathons.
 
 ## 📬 Get in touch
 
