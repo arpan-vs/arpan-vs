@@ -2,7 +2,7 @@
 
 🛠️ I build tools that poke at network protocols until they misbehave.
 
-Right now that means an MSc in Computer Science at KIT in Karlsruhe, with a focus on IT security and cryptography. Before that: nearly two years of backend and systems work, and a DRDO-sponsored research project where a fuzzer I built found behaviour in a QUIC library that its docs never mention.
+Right now that means an MSc in Computer Science at KIT in Karlsruhe, with a focus on IT security and cryptography. Before that: nearly two years of backend and systems work, and a DRDO-sponsored research project where a fuzzer I built found unknown behaviour in a QUIC library that its docs never mention.
 
 [![Portfolio](https://img.shields.io/badge/portfolio-arpan--vs.github.io-2563eb)](https://arpan-vs.github.io/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-arpanshingala02-0a66c2)](https://www.linkedin.com/in/arpan-shingala02)
