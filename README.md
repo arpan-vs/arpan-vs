@@ -17,12 +17,25 @@ Right now that means an MSc in Computer Science at KIT in Karlsruhe, with a focu
 QUIC is hard to fuzz blindly because most of the interesting bugs sit deep in the protocol's state machine. Random packets rarely get there. So I let the fuzzer learn the state machine first.
 
 ```mermaid
+%%{init: {"flowchart": {"nodeSpacing": 50, "rankSpacing": 60, "padding": 14}, "themeVariables": {"fontSize": "17px"}}}%%
 flowchart LR
-    A["lsquic server"] <-->|"queries"| B["L* learner"]
-    B -->|"infers"| C["protocol state machine"]
-    C -->|"guides"| D["test sequences"]
-    D <-->|"sent to"| A
-    D --> E["odd behaviour and bugs"]
+    A["lsquic<br/>server"] <-->|"queries / responses"| B["L* learner"]
+    B -->|"infers"| C["protocol<br/>state machine"]
+    C -->|"guides"| D["test<br/>sequences"]
+    D <-->|"test inputs / replies"| A
+    D -->|"surfaces"| E["odd behaviour<br/>and bugs"]
+ 
+    classDef target fill:#dbeafe,stroke:#2563eb,stroke-width:3px,color:#0f172a
+    classDef learn fill:#fef3c7,stroke:#d97706,stroke-width:3px,color:#0f172a
+    classDef model fill:#dcfce7,stroke:#16a34a,stroke-width:3px,color:#0f172a
+    classDef result fill:#fee2e2,stroke:#dc2626,stroke-width:3px,color:#0f172a
+ 
+    class A target
+    class B,D learn
+    class C model
+    class E result
+ 
+    linkStyle default stroke:#2563eb,stroke-width:2.5px
 ```
 
 *A sketch of the idea, not the exact architecture.*
