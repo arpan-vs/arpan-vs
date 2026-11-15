@@ -18,10 +18,10 @@ QUIC is hard to fuzz blindly because most of the interesting bugs sit deep in th
 
 ```mermaid
 flowchart LR
-    A["lsquic server"] -->|"queries"| B["L* learner"]
+    A["lsquic server"] <-->|"queries"| B["L* learner"]
     B -->|"infers"| C["protocol state machine"]
     C -->|"guides"| D["test sequences"]
-    D -->|"sent to"| A
+    D <-->|"sent to"| A
     D --> E["odd behaviour and bugs"]
 ```
 
